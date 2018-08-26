@@ -11,8 +11,7 @@ const client = new Discord.Client();
 client.on("message", async message => {
     if (message.author.bot) return;
     if (message.channel.type === "dm") return;
-    if (!message.member.voiceChannel) return message.channel.send('I can\'t find u in any voice channel')
-    let prefix = "1";
+    let prefix = "6";
     let messageArray = message.content.split(" ");
     let command = messageArray[0];
 
